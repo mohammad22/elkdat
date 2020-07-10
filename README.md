@@ -22,7 +22,8 @@ You should install some packages before initializing elkdat. Here is how to inst
 
 ```
 $ sudo apt-get install git vagrant libvirt-bin libvirt-dev kernel-package qemu-kvm libssl-dev libncurses5-dev
-$ sudo usermod -aG libvirt <your user name>
+$ sudo usermod -aG libvirt $(whoami)
+$ vagrant plugin install vagrant-libvirt
 ```
 
 If you use other distros, please install corresponding packages.
